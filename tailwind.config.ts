@@ -1,7 +1,42 @@
+// import type { Config } from "tailwindcss";
+// import withMT from "@material-tailwind/react/utils/withMT";
+
+// const config: Config = withMT({
+//   content: [
+//     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./components/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+//   ],
+//   theme: {
+//     extend: {
+//       gridTemplateColumns: {
+//         "13": "repeat(13, minmax(0, 1fr))",
+//       },
+//       colors: {
+//         blue: {
+//           400: "#2589FE",
+//           500: "#0070F3",
+//           600: "#2F6FEB",
+//         },
+//       },
+//     },
+//     keyframes: {
+//       shimmer: {
+//         "100%": {
+//           transform: "translateX(100%)",
+//         },
+//       },
+//     },
+//   },
+//   plugins: [require("@tailwindcss/forms")],
+// });
+
+// export default config;
+
 import type { Config } from "tailwindcss";
 import withMT from "@material-tailwind/react/utils/withMT";
 
-const config: Config = withMT({
+const config = withMT({
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -29,6 +64,6 @@ const config: Config = withMT({
     },
   },
   plugins: [require("@tailwindcss/forms")],
-});
+}) as Config; // Pastikan objek sesuai dengan tipe Config
 
 export default config;

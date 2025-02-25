@@ -58,6 +58,9 @@ export default function SideNav() {
             <Avatar
               src="https://docs.material-tailwind.com/img/face-2.jpg"
               alt="avatar"
+              placeholder={undefined}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
             />
             <div className="max-w-[141px]">
               <p className="mb-0 text-left text-nowrap overflow-hidden text-ellipsis">
