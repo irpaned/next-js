@@ -22,7 +22,13 @@ export default function SideNav() {
         </div>
       </Link>
       <div className="my-3">
-        <Select color="blue" label="Select Version">
+        <Select
+          color="blue"
+          label="Select Version"
+          placeholder="Pilih Versi" // Coba tambahkan placeholder
+          onPointerEnterCapture={() => {}}
+          onPointerLeaveCapture={() => {}}
+        >
           <Option>Material Tailwind HTML</Option>
           <Option>Material Tailwind React</Option>
           <Option>Material Tailwind Vue</Option>
